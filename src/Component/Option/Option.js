@@ -11,6 +11,7 @@ const Option = ({ option, correctAnswer }) => {
         if (Option) {
             if (Option === correctAnswer) {
                 notify('Correct Anwser')
+                setColor(!color)
             }
             else {
                 notify('Wrong Answer')
@@ -20,7 +21,7 @@ const Option = ({ option, correctAnswer }) => {
 
     return (
         <div className='cursor-pointer border-2 h-24 flex justify-center items-center' onClick={() => checkingRightAns(option)}>
-            <li className='text-lg'>{option}</li>
+            <p className='text-lg'>{option}</p>
             <ToastContainer></ToastContainer>
 
         </div>

@@ -19,7 +19,7 @@ const Quiz = ({ quiz }) => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-2  gap-5 mx-2 '>
+            <div className='grid lg:grid-cols-2 grid-cols-1  gap-5 mx-2 '>
                 {options.map(option => <Option option={option} correctAnswer={correctAnswer}></Option>)}
 
             </div>

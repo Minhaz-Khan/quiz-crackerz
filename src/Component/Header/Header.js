@@ -17,7 +17,8 @@ const Header = () => {
                     autoplay
                     loop
                     src="https://assets7.lottiefiles.com/packages/lf20_ayopewsc.json"
-                    style={{ height: '600px', width: '800px' }}
+
+                    className=" lg:w-[600px] lg:h-[600px] w-full"
                 >
                 </Player>
             </div>
