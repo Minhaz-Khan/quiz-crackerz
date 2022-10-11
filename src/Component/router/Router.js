@@ -3,6 +3,7 @@ import Main from "../../Layout/Main";
 import Error from "../ErrorHandle/Error";
 import Home from "../Home/Home";
 import Quastions from "../Quastions/Quastions";
+import QuizChart from "../QuizChart/QuizChart";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
                 path: '/Quastions/:id',
                 element: <Quastions></Quastions>,
                 loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+            },
+            {
+                path: 'Statistics',
+                element: <QuizChart></QuizChart>,
+                loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
             }
         ]
     }
