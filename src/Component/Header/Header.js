@@ -1,6 +1,7 @@
 import React from 'react';
 import bannerImg from '../../img/1662667753884.jfif'
 import { Player } from '@lottiefiles/react-lottie-player';
+import { ToastContainer } from 'react-toastify';
 
 const Header = () => {
     return (

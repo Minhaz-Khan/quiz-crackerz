@@ -5,7 +5,7 @@ const QuizTopics = ({ topics }) => {
     const { id, logo, name, total } = topics;
     const navigate = useNavigate()
     const handleQuizButton = () => {
-        navigate(`/Quizes/${id}`)
+        navigate(`/Quastions/${id}`)
     }
     return (
         <div className='bg-blue-100 rounded-t-md border-2 drop-shadow-xl'>
