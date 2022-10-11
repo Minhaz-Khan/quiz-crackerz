@@ -14,11 +14,11 @@ const Navbar = () => {
             </div>
             <div className={`text-2xl  font-medium absolute lg:static duration-1000 ease-in-out ${open ? 'top-[88px]' : 'top-[-300px]'} w-full  bg-slate-100 lg:bg-transparent lg:py-0 py-3 z-[-1]`}>
                 <ul className='lg:flex lg:justify-end text-center lg:space-x-10'>
-                    <li><NavLink to='/Home' className={({ isActive }) => isActive ? 'text-green-600' : 'text-black hover:text-green-600'}>Home</NavLink></li>
+                    <li><NavLink to='/' className={({ isActive }) => isActive ? 'text-green-600' : 'text-black hover:text-green-600'}>Home</NavLink></li>
                     <li><NavLink to='/Topics' className={({ isActive }) => isActive ? 'text-green-600' : 'text-black hover:text-green-600'}>Topics</NavLink></li>
                     <li><NavLink to='/Statistics' className={({ isActive }) => isActive ? 'text-green-600' : 'text-black hover:text-green-600'}>Statistics</NavLink></li>
                     <li><NavLink to='/Blog' className={({ isActive }) => isActive ? 'text-green-600' : 'text-black hover:text-green-600'}>Blog</NavLink></li>
-                    <li><NavLink to='/About' className={({ isActive }) => isActive ? 'text-green-600' : 'text-black hover:text-green-600'}>About</NavLink></li>
+
                 </ul>
             </div>
         </div>
