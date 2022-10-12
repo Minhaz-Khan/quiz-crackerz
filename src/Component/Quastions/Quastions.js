@@ -25,10 +25,10 @@ const Quastions = () => {
                         {questions.map(quiz => <Quiz key={quiz.id} quiz={quiz}></Quiz>)}
                     </div>
                 </div>
-                <div className='lg:col-span-3 col-span-12 h-96 bg-cyan-100 p-10 mt-20'>
+                <div className='lg:col-span-3 col-span-12 h-40 bg-cyan-100 p-10 mt-20'>
                     <div className='my-auto'>
-                        <h3 className='text-3xl '>Correct Answer:{correct}</h3>
-                        <h3 className='text-3xl '>Wrong Answer:{wrong}</h3>
+                        <h3 className='text-3xl font-medium'>Correct Answer: {correct}</h3>
+                        <h3 className='text-3xl font-medium'>Wrong Answer: {wrong}</h3>
                     </div>
                 </div>
             </div>
