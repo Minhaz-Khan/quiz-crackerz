@@ -19,13 +19,13 @@ const Quastions = () => {
     return (
         <Markscontext.Provider value={handleQuizMarks}>
             <div className='my-10 grid grid-cols-12'>
-                <div className='col-span-9'>
+                <div className='lg:col-span-9 col-span-12'>
                     <h1 className='text-3xl text-center mb-10'>Quiz of {name}</h1>
                     <div className='grid grid-cols-1 mx-auto gap-10 lg:w-6/12 w-full'>
                         {questions.map(quiz => <Quiz key={quiz.id} quiz={quiz}></Quiz>)}
                     </div>
                 </div>
-                <div className='col-span-3 h-96 bg-slate-200 p-10'>
+                <div className='lg:col-span-3 col-span-12 h-96 bg-cyan-100 p-10 mt-20'>
                     <div className='my-auto'>
                         <h3 className='text-3xl '>Correct Answer:{correct}</h3>
                         <h3 className='text-3xl '>Wrong Answer:{wrong}</h3>

@@ -7,10 +7,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Quiz = ({ quiz }) => {
     const { correctAnswer, options, question } = quiz;
+    console.log(options);
     const notify = () => toast(correctAnswer)
 
     return (
-        <div className='border-2 w-full  p-3 space-y-3'>
+        <div className='border-2 w-full  p-3 space-y-3 bg-cyan-100 border-cyan-200'>
             <ToastContainer></ToastContainer>
             <div className='flex justify-center items-center relative'>
                 <h2 className='text-2xl mx-5'>{question}</h2>
@@ -20,7 +21,7 @@ const Quiz = ({ quiz }) => {
             </div>
 
             <div className='grid lg:grid-cols-2 grid-cols-1  gap-5 mx-2 '>
-                {options.map(option => <Option option={option} correctAnswer={correctAnswer}></Option>)}
+                {options.map((option, index) => <Option key={index} option={option} correctAnswer={correctAnswer}></Option>)}
 
             </div>
         </div>

@@ -27,7 +27,7 @@ const Option = ({ option, correctAnswer }) => {
     }
 
     return (
-        <div className={`cursor-pointer border-2 h-24 flex justify-center items-center ${color === 'true' && 'text-green-500 border-green-600'
+        <div className={`cursor-pointer border-2 hover:bg-green-400 duration-700 border-cyan-200 h-24 flex justify-center items-center ${color === 'true' && 'text-green-500 border-green-600 '
             }`} onClick={() => checkingRightAns(option)}>
             <p className='text-lg'>{option}</p>
             <ToastContainer></ToastContainer>
