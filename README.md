@@ -7,4 +7,4 @@
 - If you click on any option of the quiz, a popup will open through toastify where the answer will be told whether it is correct or incorrect and a div next to it will show how many answers are correct and incorrect.
 
 ## Live website link
-[Handlebars templates](http://handlebarsjs.com/)
+[TEAMSCODE](https://sparkly-faloodeh-49b323.netlify.app/Home)

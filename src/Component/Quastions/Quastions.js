@@ -20,7 +20,7 @@ const Quastions = () => {
         <Markscontext.Provider value={handleQuizMarks}>
             <div className='my-10 grid grid-cols-12'>
                 <div className='lg:col-span-9 col-span-12'>
-                    <h1 className='text-3xl text-center mb-10'>Quiz of {name}</h1>
+                    <h1 className='text-3xl text-center mb-10 font-bold'>Quiz of {name}</h1>
                     <div className='grid grid-cols-1 mx-auto gap-10 lg:w-6/12 w-full'>
                         {questions.map(quiz => <Quiz key={quiz.id} quiz={quiz}></Quiz>)}
                     </div>
